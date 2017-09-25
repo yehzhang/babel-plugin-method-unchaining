@@ -11,7 +11,7 @@ var result = Class.newBuilder().build();
 ```javascript
 var _a;
 
-result = (_a = Class.newBuilder(), _a.build)();
+var result = (_a = Class.newBuilder(), _a.build)();
 _a = undefined;
 ```
 
