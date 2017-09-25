@@ -1,0 +1,1 @@
+result = Class(getDefaultInstance()).build;

@@ -1,0 +1,311 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Match snapshots of generated code for interleaved.js 1`] = `
+"var _a;
+
+result = (_a = (_a = Class(), _a.newBuilder).setFirst(), _a.build);
+_a = undefined;"
+`;
+
+exports[`Match snapshots of generated code for multiple statements for loop body.js 1`] = `
+"for (var i = 0; i < 1; i++) {
+    var _a, _a2;
+
+    result = (_a = Class(), _a.build)();
+    _a = undefined;
+    result = (_a2 = (_a2 = Class(), _a2.newBuilder)(), _a2.build)();
+    _a2 = undefined;
+}"
+`;
+
+exports[`Match snapshots of generated code for nested first level argument.js 1`] = `
+"var _a;
+
+result = (_a = (_a = (_a = Class(), _a.newBuilder)(), _a.setFirst)((_a = getDefaultInstance(), _a.clear)), _a.build);
+_a = undefined;"
+`;
+
+exports[`Match snapshots of generated code for nested multiple level arguments.js 1`] = `
+"var _a;
+
+result = (_a = (_a = (_a = Class((_a = Clazz(), _a.toBuilder)), _a.newBuilder)((_a = Cls(), _a.mergeFrom)), _a.setFirst)((_a = getDefaultInstance(), _a.clear)), _a.build);
+_a = undefined;"
+`;
+
+exports[`Match snapshots of generated code for nested outer argument.js 1`] = `
+"var _a, _a2, _a3;
+
+result = (_a = (_a = (_a = Class(), _a.newBuilder)(), _a.setFirst)(), _a.build)((_a2 = getDefaultInstance(), _a2.clear)((_a3 = newMessage(), _a3.toBuilder)));
+_a3 = undefined;
+_a2 = undefined;
+_a = undefined;"
+`;
+
+exports[`Match snapshots of generated code for nested second level argument.js 1`] = `
+"var _a;
+
+result = (_a = (_a = (_a = Class(), _a.newBuilder)((_a = getDefaultInstance(), _a.clear)), _a.setFirst)(), _a.build);
+_a = undefined;"
+`;
+
+exports[`Match snapshots of generated code for one level as argument.js 1`] = `
+"var _a;
+
+result = Class((_a = newBuilder(), _a.build));
+_a = undefined;"
+`;
+
+exports[`Match snapshots of generated code for one level binary expression.js 1`] = `
+"var _a, _a2;
+
+result = (_a = newBuilder(), _a.build) + (_a2 = getDefaultInstance(), _a2.clear);
+_a2 = undefined;
+_a = undefined;"
+`;
+
+exports[`Match snapshots of generated code for one level computed.js 1`] = `
+"var _a;
+
+result = (_a = Class(), _a['newBuilder']);
+_a = undefined;"
+`;
+
+exports[`Match snapshots of generated code for one level following identifier.js 1`] = `
+"var _a;
+
+result = (_a = Class.newBuilder(), _a.build);
+_a = undefined;"
+`;
+
+exports[`Match snapshots of generated code for one level for loop body no braces.js 1`] = `
+"for (var i = 0; i < 10; i++) {
+  var _a;
+
+  result = (_a = Class(), _a.b);
+  _a = undefined;
+}"
+`;
+
+exports[`Match snapshots of generated code for one level for loop variable declaration.js 1`] = `
+"for (var i = (_a = Class(), _a.b); i < 10; i++) {
+  var _a;
+}
+_a = undefined;"
+`;
+
+exports[`Match snapshots of generated code for one level ternary.js 1`] = `
+"var _a, _a2;
+
+result = result ? (_a = Class(), _a.build) : (_a2 = Class(), _a2.clear);
+_a2 = undefined;
+_a = undefined;"
+`;
+
+exports[`Match snapshots of generated code for one level with argument.js 1`] = `
+"var _a;
+
+result = (_a = Class(getDefaultInstance()), _a.build);
+_a = undefined;"
+`;
+
+exports[`Match snapshots of generated code for one level.js 1`] = `
+"var _a;
+
+result = (_a = Class(), _a.build);
+_a = undefined;"
+`;
+
+exports[`Match snapshots of generated code for three level.js 1`] = `
+"var _a;
+
+result = (_a = (_a = (_a = Class(), _a.newBuilder)(), _a.setFirst)(), _a.build);
+_a = undefined;"
+`;
+
+exports[`Match snapshots of generated code for two level computed.js 1`] = `
+"var _a;
+
+result = (_a = (_a = Class(), _a['newBuilder'])(), _a['build']);
+_a = undefined;"
+`;
+
+exports[`Match snapshots of generated code for two level followed by function call.js 1`] = `
+"var _a;
+
+result = (_a = (_a = newBuilder(), _a.setFirst)(), _a.build)();
+_a = undefined;"
+`;
+
+exports[`Match snapshots of generated code for two level following identifier.js 1`] = `
+"var _a;
+
+result = (_a = (_a = Class.newBuilder(), _a.setFirst)(), _a.build);
+_a = undefined;"
+`;
+
+exports[`Match snapshots of generated code for two level.js 1`] = `
+"var _a;
+
+result = (_a = (_a = newBuilder(), _a.setFirst)(), _a.build);
+_a = undefined;"
+`;
+
+exports[`Match snapshots of generated code for unchanged.js 1`] = `
+"result = Class.b;
+result = Class();"
+`;
+
+exports[`Match snapshots of traversal for interleaved.js 1`] = `
+Array [
+  "visitor: Second Level, property: newBuilder, transformed",
+  "visitor: Second Level, property: setFirst, unchanged",
+  "visitor: Top Level, property: build, transformed",
+]
+`;
+
+exports[`Match snapshots of traversal for multiple statements for loop body.js 1`] = `
+Array [
+  "visitor: Top Level, property: build, transformed",
+  "visitor: Second Level, property: newBuilder, transformed",
+  "visitor: Top Level, property: build, transformed",
+]
+`;
+
+exports[`Match snapshots of traversal for nested first level argument.js 1`] = `
+Array [
+  "visitor: Second Level, property: newBuilder, transformed",
+  "visitor: Second Level, property: setFirst, transformed",
+  "visitor: Second Level, property: clear, transformed",
+  "visitor: Top Level, property: build, transformed",
+]
+`;
+
+exports[`Match snapshots of traversal for nested multiple level arguments.js 1`] = `
+Array [
+  "visitor: Second Level, property: toBuilder, transformed",
+  "visitor: Second Level, property: newBuilder, transformed",
+  "visitor: Second Level, property: mergeFrom, transformed",
+  "visitor: Second Level, property: setFirst, transformed",
+  "visitor: Second Level, property: clear, transformed",
+  "visitor: Top Level, property: build, transformed",
+]
+`;
+
+exports[`Match snapshots of traversal for nested outer argument.js 1`] = `
+Array [
+  "visitor: Second Level, property: newBuilder, transformed",
+  "visitor: Second Level, property: setFirst, transformed",
+  "visitor: Top Level, property: build, transformed",
+  "visitor: Top Level, property: clear, transformed",
+  "visitor: Top Level, property: toBuilder, transformed",
+]
+`;
+
+exports[`Match snapshots of traversal for nested second level argument.js 1`] = `
+Array [
+  "visitor: Second Level, property: newBuilder, transformed",
+  "visitor: Second Level, property: clear, transformed",
+  "visitor: Second Level, property: setFirst, transformed",
+  "visitor: Top Level, property: build, transformed",
+]
+`;
+
+exports[`Match snapshots of traversal for one level as argument.js 1`] = `
+Array [
+  "visitor: Top Level, property: build, transformed",
+]
+`;
+
+exports[`Match snapshots of traversal for one level binary expression.js 1`] = `
+Array [
+  "visitor: Top Level, property: build, transformed",
+  "visitor: Top Level, property: clear, transformed",
+]
+`;
+
+exports[`Match snapshots of traversal for one level computed.js 1`] = `
+Array [
+  "visitor: Top Level, property: newBuilder, transformed",
+]
+`;
+
+exports[`Match snapshots of traversal for one level following identifier.js 1`] = `
+Array [
+  "visitor: Second Level, property: newBuilder, unchanged",
+  "visitor: Top Level, property: build, transformed",
+]
+`;
+
+exports[`Match snapshots of traversal for one level for loop body no braces.js 1`] = `
+Array [
+  "visitor: Top Level, property: b, transformed",
+]
+`;
+
+exports[`Match snapshots of traversal for one level for loop variable declaration.js 1`] = `
+Array [
+  "visitor: Top Level, property: b, transformed",
+]
+`;
+
+exports[`Match snapshots of traversal for one level ternary.js 1`] = `
+Array [
+  "visitor: Top Level, property: build, transformed",
+  "visitor: Top Level, property: clear, transformed",
+]
+`;
+
+exports[`Match snapshots of traversal for one level with argument.js 1`] = `
+Array [
+  "visitor: Top Level, property: build, transformed",
+]
+`;
+
+exports[`Match snapshots of traversal for one level.js 1`] = `
+Array [
+  "visitor: Top Level, property: build, transformed",
+]
+`;
+
+exports[`Match snapshots of traversal for three level.js 1`] = `
+Array [
+  "visitor: Second Level, property: newBuilder, transformed",
+  "visitor: Second Level, property: setFirst, transformed",
+  "visitor: Top Level, property: build, transformed",
+]
+`;
+
+exports[`Match snapshots of traversal for two level computed.js 1`] = `
+Array [
+  "visitor: Second Level, property: newBuilder, transformed",
+  "visitor: Top Level, property: build, transformed",
+]
+`;
+
+exports[`Match snapshots of traversal for two level followed by function call.js 1`] = `
+Array [
+  "visitor: Second Level, property: setFirst, transformed",
+  "visitor: Top Level, property: build, transformed",
+]
+`;
+
+exports[`Match snapshots of traversal for two level following identifier.js 1`] = `
+Array [
+  "visitor: Second Level, property: newBuilder, unchanged",
+  "visitor: Second Level, property: setFirst, transformed",
+  "visitor: Top Level, property: build, transformed",
+]
+`;
+
+exports[`Match snapshots of traversal for two level.js 1`] = `
+Array [
+  "visitor: Second Level, property: setFirst, transformed",
+  "visitor: Top Level, property: build, transformed",
+]
+`;
+
+exports[`Match snapshots of traversal for unchanged.js 1`] = `
+Array [
+  "visitor: Top Level, property: b, unchanged",
+]
+`;
