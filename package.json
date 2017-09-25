@@ -1,10 +1,11 @@
 {
   "name": "babel-plugin-method-unchaining",
   "version": "1.0.0",
-  "description": "Transforms method chaining to statements.",
+  "description": "Transforms method chaining to sequence of expressions.",
   "main": "build/index.js",
   "keywords": [
-    "babel-plugin"
+    "babel-plugin",
+    "ad-hoc"
   ],
   "scripts": {
     "build": "rm -rf build && babel -d build/ src/",
