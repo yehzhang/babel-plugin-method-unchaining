@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-method-unchaining",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Transforms method chaining to sequence of expressions.",
   "main": "build/index.js",
   "keywords": [
@@ -10,7 +10,7 @@
   "scripts": {
     "build": "rm -rf build && babel -d build/ src/",
     "build:dev": "babel -s -d build/ src/",
-    "prepublish": "npm run build",
+    "prepublish": "npm run build && npm test",
     "pretest": "npm run build:dev",
     "test": "mocha --compilers js:babel-core/register --grep ''"
   },

@@ -9,12 +9,12 @@ _a = undefined;"
 
 exports[`Match snapshots of generated code for multiple statements for loop body.js 1`] = `
 "for (var i = 0; i < 1; i++) {
-    var _a, _a2;
+  var _a, _a2;
 
-    result = (_a = Class(), _a.build)();
-    _a = undefined;
-    result = (_a2 = (_a2 = Class(), _a2.newBuilder)(), _a2.build)();
-    _a2 = undefined;
+  result = (_a = Class(), _a.build)();
+  _a = undefined;
+  result = (_a2 = (_a2 = Class(), _a2.newBuilder)(), _a2.build)();
+  _a2 = undefined;
 }"
 `;
 
@@ -89,6 +89,8 @@ exports[`Match snapshots of generated code for one level for loop body no braces
 exports[`Match snapshots of generated code for one level for loop variable declaration.js 1`] = `
 "for (var i = (_a = Class(), _a.b); i < 10; i++) {
   var _a;
+
+  i;
 }
 _a = undefined;"
 `;
